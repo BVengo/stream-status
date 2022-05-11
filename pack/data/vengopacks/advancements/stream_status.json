@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crimson_button"
+		},
+		"title": "Stream Status",
+		"description": ["", 
+			{"text": "Colour player names based on their recording preferences!\n", "color": "green"},
+			{"text": "Also add an", "color": "green"},
+			{"text": " [AFK] ", "color": "gray"},
+			{"text": "suffix to those who have stood still for 5 minutes.", "color": "green"}],
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+    "parent": "vengopacks:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
