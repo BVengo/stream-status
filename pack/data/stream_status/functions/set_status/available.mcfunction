@@ -9,5 +9,5 @@ scoreboard players set @s ss_unavailable 0
 
 team join ss_available @s
 
-tellraw @s [{"text":"Available ", "color":"green"}, {"text":"status enabled", "color":"aqua"}]
-tellraw @s [{"text":"You have tagged yourself as happy to participate with any content creators that come your way!", "color":"aqua"}]
+tellraw @s [{"text":"Available ", "color":"green"}, {"text":"status enabled", "color":"gray"}]
+tellraw @s [{"text":"You have tagged yourself as happy to participate with any content creators that come your way!", "color":"gray"}]

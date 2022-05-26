@@ -9,5 +9,5 @@ scoreboard players set @s ss_unavailable 0
 
 team join ss_recording @s
 
-tellraw @s [{"text":"Recording ", "color":"red"}, {"text":"status enabled", "color":"aqua"}]
-tellraw @s [{"text":"Please follow the content creator rules, and enjoy your recording!", "color":"aqua"}]
+tellraw @s [{"text":"Recording ", "color":"red"}, {"text":"status enabled", "color":"gray"}]
+tellraw @s [{"text":"Please follow the content creator rules, and enjoy your recording!", "color":"gray"}]
