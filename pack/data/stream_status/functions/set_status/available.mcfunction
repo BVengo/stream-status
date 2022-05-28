@@ -4,8 +4,8 @@ execute run tag @s remove ss_unavailable
 execute run tag @s add ss_available
 
 # Make sure objectives match tags
-scoreboard players set @s ss_recording 0
-scoreboard players set @s ss_unavailable 0
+scoreboard players set @s recording 0
+scoreboard players set @s unavailable 0
 
 team join ss_available @s
 

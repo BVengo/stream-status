@@ -14,10 +14,10 @@ execute as @a[tag=!ss_isAFK, scores={ss_checkAFK=150..}] run function stream_sta
 execute as @a[tag=ss_isAFK] run function stream_status:afk/remove
 
 # Enable permission to use the triggers
-scoreboard players enable @a ss_recording
-scoreboard players enable @a ss_available
-scoreboard players enable @a ss_unavailable
+scoreboard players enable @a recording
+scoreboard players enable @a available
+scoreboard players enable @a unavailable
 
-execute as @a[tag=!ss_recording, scores={ss_recording=1}] run function stream_status:set_status/recording
-execute as @a[tag=!ss_available, scores={ss_available=1}] run function stream_status:set_status/available
-execute as @a[tag=!ss_unavailable, scores={ss_unavailable=1}] run function stream_status:set_status/unavailable
+execute as @a[tag=!ss_recording, scores={recording=1}] run function stream_status:set_status/recording
+execute as @a[tag=!ss_available, scores={available=1}] run function stream_status:set_status/available
+execute as @a[tag=!ss_unavailable, scores={unavailable=1}] run function stream_status:set_status/unavailable

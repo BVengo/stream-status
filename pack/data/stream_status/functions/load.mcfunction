@@ -12,9 +12,9 @@ scoreboard objectives add ss_z2 dummy
 scoreboard objectives add ss_checkAFK dummy
 
 # Add status objective
-scoreboard objectives add ss_recording trigger
-scoreboard objectives add ss_available trigger
-scoreboard objectives add ss_unavailable trigger
+scoreboard objectives add recording trigger
+scoreboard objectives add available trigger
+scoreboard objectives add unavailable trigger
 
 # Add game leaving objective
 scoreboard objectives add ss_gamesLeft custom:leave_game
