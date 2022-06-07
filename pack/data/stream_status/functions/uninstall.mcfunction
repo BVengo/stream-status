@@ -17,7 +17,7 @@ scoreboard objectives remove ss_recording
 scoreboard objectives remove ss_available
 scoreboard objectives remove ss_unavailable
 
-scoreboard objectives add ss_numRecording dummy
+scoreboard objectives remove ss_numRecording
 
 # Remove status tags
 tag @a remove ss_recording
