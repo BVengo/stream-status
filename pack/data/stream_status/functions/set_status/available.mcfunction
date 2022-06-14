@@ -7,7 +7,8 @@ execute run tag @s add ss_available
 scoreboard players set @s recording 0
 scoreboard players set @s unavailable 0
 
-team join ss_available @s
+execute as @s[tag=!ss_isAFK] run team join ss_available
+execute as @s[tag=ss_isAFK] run team join ss_available_afk
 
 tellraw @s [{"text":"Available ", "color":"green"}, {"text":"status enabled", "color":"gray"}]
 tellraw @s [{"text":"You have tagged yourself as happy to participate with any content creators that come your way!", "color":"gray"}]

@@ -17,7 +17,9 @@ execute as @a[tag=ss_isAFK] run function stream_status:afk/remove
 scoreboard players enable @a recording
 scoreboard players enable @a available
 scoreboard players enable @a unavailable
+scoreboard players enable @a afk
 
 execute as @a[tag=!ss_recording, scores={recording=1}] run function stream_status:set_status/recording
 execute as @a[tag=!ss_available, scores={available=1}] run function stream_status:set_status/available
 execute as @a[tag=!ss_unavailable, scores={unavailable=1}] run function stream_status:set_status/unavailable
+execute as @a[scores={afk=1}] run function stream_status:set_status/afk

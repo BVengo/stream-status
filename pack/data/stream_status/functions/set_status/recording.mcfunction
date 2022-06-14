@@ -7,7 +7,8 @@ execute run tag @s add ss_recording
 scoreboard players set @s available 0
 scoreboard players set @s unavailable 0
 
-team join ss_recording @s
+execute as @s[tag=!ss_isAFK] run team join ss_recording
+execute as @s[tag=ss_isAFK] run team join ss_recording_afk
 
 tellraw @s [{"text":"Recording ", "color":"red"}, {"text":"status enabled", "color":"gray"}]
 tellraw @s [{"text":"Please follow the content creator rules, and enjoy your recording!", "color":"gray"}]

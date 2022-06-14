@@ -7,7 +7,8 @@ execute run tag @s add ss_unavailable
 scoreboard players set @s recording 0
 scoreboard players set @s available 0
 
-team join ss_unavailable @s
+execute as @s[tag=!ss_isAFK] run team join ss_unavailable
+execute as @s[tag=ss_isAFK] run team join ss_unavailable_afk
 
 tellraw @s [{"text":"Unavailable ", "color":"yellow"}, {"text":"status enabled.", "color":"gray"}]
 tellraw @s [{"text":"You are free to go about your business without content creators interacting with you as they record.", "color":"gray"}]

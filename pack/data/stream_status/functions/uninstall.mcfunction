@@ -16,7 +16,12 @@ tag @a remove ss_isAFK
 scoreboard objectives remove recording
 scoreboard objectives remove available
 scoreboard objectives remove unavailable
+scoreboard objectives remove afk
 
+# Remove game leaving objective
+scoreboard objectives remove ss_gamesLeft
+
+# Count number of players recording
 scoreboard objectives remove ss_numRecording
 
 # Remove status tags

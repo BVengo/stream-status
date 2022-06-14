@@ -15,6 +15,7 @@ scoreboard objectives add ss_checkAFK dummy
 scoreboard objectives add recording trigger
 scoreboard objectives add available trigger
 scoreboard objectives add unavailable trigger
+scoreboard objectives add afk trigger
 
 # Add game leaving objective
 scoreboard objectives add ss_gamesLeft custom:leave_game
