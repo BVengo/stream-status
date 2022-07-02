@@ -3,13 +3,9 @@ scoreboard players set @s[tag=!ss_recording] recording 0
 execute as @s[scores={recording=0}] run tag @s add ss_recording
 execute as @s[scores={recording=1}] run tag @s remove ss_recording
 
-# Add to corresponding team
-execute as @s[tag=ss_recording, team=] run team join ss_recording @s
-execute as @s[tag=ss_recording, team=ss_afk] run team join ss_recording_afk @s
-
-# Remove from corresponding team
-execute as @s[tag=!ss_recording, team=ss_recording] run team leave @s
-execute as @s[tag=!ss_recording, team=ss_recording_afk] run team join ss_afk @s
+# Join or leave recording team
+execute as @s[tag=ss_recording] run function stream_status:recording/join
+execute as @s[tag=!ss_recording] run function stream_status:recording/leave
 
 # Reset recording checker and trigger
 scoreboard players set @s recording 0

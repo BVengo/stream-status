@@ -1,0 +1,29 @@
+execute in minecraft:overworld as @a[team=, distance=0..] run team join ss_0_overworld
+execute in minecraft:overworld as @a[team=ss_1_nether, distance=0..] run team join ss_0_overworld
+execute in minecraft:overworld as @a[team=ss_2_end, distance=0..] run team join ss_0_overworld
+execute in minecraft:overworld as @a[team=ss_4_nether_recording, distance=0..] run team join ss_3_overworld_recording
+execute in minecraft:overworld as @a[team=ss_5_end_recording, distance=0..] run team join ss_3_overworld_recording
+execute in minecraft:overworld as @a[team=ss_7_nether_recording_afk, distance=0..] run team join ss_6_overworld_afk_recording
+execute in minecraft:overworld as @a[team=ss_8_end_recording_afk, distance=0..] run team join ss_6_overworld_afk_recording
+execute in minecraft:overworld as @a[team=ss_10_nether_afk, distance=0..] run team join ss_9_overworld_afk
+execute in minecraft:overworld as @a[team=ss_11_end_afk, distance=0..] run team join ss_9_overworld_afk
+
+execute in minecraft:the_nether as @a[team=, distance=0..] run team join ss_1_nether
+execute in minecraft:the_nether as @a[team=ss_0_overworld, distance=0..] run team join ss_1_nether
+execute in minecraft:the_nether as @a[team=ss_2_end, distance=0..] run team join ss_1_nether
+execute in minecraft:the_nether as @a[team=ss_3_overworld_recording, distance=0..] run team join ss_4_nether_recording
+execute in minecraft:the_nether as @a[team=ss_5_end_recording, distance=0..] run team join ss_4_nether_recording
+execute in minecraft:the_nether as @a[team=ss_6_overworld_afk_recording, distance=0..] run team join ss_7_nether_recording_afk
+execute in minecraft:the_nether as @a[team=ss_8_end_recording_afk, distance=0..] run team join ss_7_nether_recording_afk
+execute in minecraft:the_nether as @a[team=ss_9_overworld_afk, distance=0..] run team join ss_10_nether_afk
+execute in minecraft:the_nether as @a[team=ss_11_end_afk, distance=0..] run team join ss_10_nether_afk
+
+execute in minecraft:the_end as @a[team=, distance=0..] run team join ss_2_end
+execute in minecraft:the_end as @a[team=ss_0_overworld, distance=0..] run team join ss_2_end
+execute in minecraft:the_end as @a[team=ss_1_nether, distance=0..] run team join ss_2_end
+execute in minecraft:the_end as @a[team=ss_3_overworld_recording, distance=0..] run team join ss_5_end_recording 
+execute in minecraft:the_end as @a[team=ss_4_nether_recording, distance=0..] run team join ss_5_end_recording
+execute in minecraft:the_end as @a[team=ss_6_overworld_afk_recording, distance=0..] run team join ss_8_end_recording_afk
+execute in minecraft:the_end as @a[team=ss_7_nether_recording_afk, distance=0..] run team join ss_8_end_recording_afk
+execute in minecraft:the_end as @a[team=ss_9_overworld_afk, distance=0..] run team join ss_11_end_afk
+execute in minecraft:the_end as @a[team=ss_10_nether_afk, distance=0..] run team join ss_11_end_afk

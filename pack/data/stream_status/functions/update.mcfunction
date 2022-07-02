@@ -14,5 +14,7 @@ execute as @a[tag=ss_afk] run function stream_status:afk/remove
 scoreboard players enable @a recording
 scoreboard players enable @a afk
 
-execute as @a[scores={recording=1}] run function stream_status:set_status/recording
-execute as @a[scores={afk=1}] run function stream_status:set_status/afk
+execute as @a[scores={recording=1}] run function stream_status:trigger/recording
+execute as @a[scores={afk=1}] run function stream_status:trigger/afk
+
+execute as @a run function stream_status:dimension/join
