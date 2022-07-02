@@ -1,1 +1,0 @@
-execute unless entity @s[team=ss_available] unless entity @s[team=ss_available_afk] unless entity @s[team=ss_unavailable] unless entity @s[team=ss_unavailable_afk] unless entity @s[team=ss_recording] unless entity @s[team=ss_recording_afk] run function stream_status:set_status/unavailable
