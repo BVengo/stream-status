@@ -1,6 +1,8 @@
 # Stream Status
 This is a basic minecraft datapack, allowing players to indicate if they are recording or not. It also updates based on if a player is AFK or not. As another feature, it displays coloured names based on which dimension the player is in.
 
+Use the command `/trigger recording` for the red dot, and `/trigger afk` for the gray dot. Note that the AFK dot will appear automatically after 5 minutes of no activity.
+
 | Status    | Colour    |
 |-----------|-----------|
 | Overworld | Green     |
