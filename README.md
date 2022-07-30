@@ -3,7 +3,7 @@ This is a basic minecraft datapack, allowing players to indicate if they are rec
 
 Use the command `/trigger recording` for the red dot, and `/trigger afk` for the gray dot. Note that the AFK dot will appear automatically after 5 minutes of no activity.
 
-| Status    | Colour    |
+| Dimension | Colour    |
 |-----------|-----------|
 | Overworld | Green     |
 | Nether    | Red       |
